@@ -5,14 +5,13 @@ collected 27 items
 
 Level-1/test_one_task.py .............                                   [ 48%]
 Level-2/test_two_task.py ....FFF                                         [ 74%]
-Level-3/test_three_task.py FFFFFFF                                       [100%]
+Level-3/test_three_task.py FFF.FFF                                       [100%]
 
-======================== 10 failed, 17 passed in 0.10s =========================
+========================= 9 failed, 18 passed in 0.11s =========================
 ************* Module task_three
-Level-3/task_three.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
-Level-3/task_three.py:6:21: W0621: Redefining name 'receipt_string' from outer scope (line 12) (redefined-outer-name)
-Level-3/task_three.py:6:21: W0613: Unused argument 'receipt_string' (unused-argument)
+Level-3/task_three.py:5:21: W0621: Redefining name 'receipt_string' from outer scope (line 25) (redefined-outer-name)
+Level-3/task_three.py:12:10: E0606: Possibly using variable 'total' before assignment (possibly-used-before-assignment)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.49/10 (previous run: 9.49/10, +0.00)
+Your code has been rated at 9.15/10 (previous run: 9.15/10, +0.00)
 
