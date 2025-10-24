@@ -10,15 +10,40 @@ basket = []
 # COPY YOUR CODE FROM LEVEL 1 BELOW
 #
 #####
-
-
 def add_to_basket(item: dict) -> list:
-    pass
+    '''Adds item to basket'''
+    basket.append(item)
+    return basket
 
 
+def generate_receipt(final_basket: list) -> str:
+    '''Returns the generated receipt'''
+    if len(final_basket) == 0:
+        return "Basket is empty"
 
-def generate_receipt(basket: list) -> str:
-    pass
+    total = 0
+    shopping_list = []
+    counted_shopping_list = {}
+
+    for existing_item in final_basket:
+        name = existing_item["name"]
+        price = existing_item["price"]
+        key = name, price
+        counted_shopping_list[key] = counted_shopping_list.get((name, price),0) + 1
+
+    for (key), count in counted_shopping_list.items():
+        duplicates = price * count
+        total += duplicates
+
+        if price == 0:
+            shopping_list.append(f"{name} x {count} - Free")
+        else:
+            shopping_list.append(f"{name} x {count} - £{total:.2f}")
+
+    shopping_list.append(f"Total: £{total:.2f}")
+    receipt = "\n".join(shopping_list)
+
+    return receipt
 
 #####
 #
