@@ -13,7 +13,23 @@ def add_to_basket(item: dict) -> list:
 
 
 def generate_receipt(basket: list) -> str:
-    return  # return the receipt string
+    '''Returns the generated receipt'''
+    if len(basket) == 0:
+       return "Basket is empty"
+    
+    total = 0 
+    shopping_list = []
+    for item in basket:
+        name = item["name"]
+        price = item["price"]
+        if price == 0:
+            shopping_list.append(f"{name} - Free")
+        else: 
+            shopping_list.append(f"{name} - £{price}")
+        total += price
+
+    shopping_list.append(f"Total: {total}")
+    return shopping_list
 
 
 if __name__ == "__main__":
