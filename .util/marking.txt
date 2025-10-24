@@ -1,15 +1,13 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.11, pytest-8.4.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-1-main/Assessment-Fundamentals-Week-1-main
-collected 14 items / 1 error
+collected 27 items
 
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.10s ===============================
-************* Module task_one
-Level-1/task_one.py:21:4: W0105: String statement has no effect (pointless-string-statement)
-Level-1/task_one.py:26:4: W0105: String statement has no effect (pointless-string-statement)
-Level-1/task_one.py:31:8: W0105: String statement has no effect (pointless-string-statement)
-Level-1/task_one.py:42:4: W0105: String statement has no effect (pointless-string-statement)
+Level-1/test_one_task.py .............                                   [ 48%]
+Level-2/test_two_task.py FFFFFFF                                         [ 74%]
+Level-3/test_three_task.py FFFFFFF                                       [100%]
+
+======================== 14 failed, 13 passed in 0.09s =========================
 ************* Module task_two
 Level-2/task_two.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
 Level-2/task_two.py:15:18: W0613: Unused argument 'item' (unused-argument)
@@ -22,5 +20,5 @@ Level-3/task_three.py:6:21: W0621: Redefining name 'receipt_string' from outer s
 Level-3/task_three.py:6:21: W0613: Unused argument 'receipt_string' (unused-argument)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.27/10 (previous run: 7.27/10, +0.00)
+Your code has been rated at 8.00/10 (previous run: 8.00/10, +0.00)
 
